@@ -1,0 +1,22 @@
+# ==============================================================================
+# AI Research Paper Assistant - Configuration Properties Template
+# ==============================================================================
+# Instructions:
+# 1. Copy or rename this file to 'config.properties' in the same folder:
+#      src/main/resources/config.properties
+# 2. Update with your local MySQL credentials and Google Gemini API key.
+#
+# NOTE: 'config.properties' contains your private secrets and is ignored
+# by Git (.gitignore). Never commit your real API key or passwords to GitHub!
+# ==============================================================================
+
+# Database Configuration (MySQL)
+db.url=jdbc:mysql://localhost:3306/ai_research_assistant?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+db.user=root
+db.password=your_mysql_password_here
+
+# Google Gemini API Configuration
+# Get your free API key at: https://aistudio.google.com/
+# (Alternatively, you can set the GEMINI_API_KEY environment variable)
+gemini.api.key=YOUR_GEMINI_API_KEY_HERE
+gemini.api.model=gemini-3.5-flash-lite

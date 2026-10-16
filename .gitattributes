@@ -1,0 +1,28 @@
+# Auto-detect text files and normalize line endings
+* text=auto
+
+# Enforce LF for shell scripts (ensures mvnw runs properly on Linux/macOS)
+mvnw text eol=lf
+*.sh text eol=lf
+
+# Enforce CRLF for Windows batch files
+mvnw.cmd text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Source code files
+*.java text diff=java
+*.xml text
+*.properties text
+*.sql text
+*.css text
+*.md text
+
+# Binary files
+*.jar binary
+*.class binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary

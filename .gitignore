@@ -1,0 +1,113 @@
+# ==============================================================================
+# AI Research Paper Assistant - .gitignore
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Sensitive Credentials & API Keys (CRITICAL - DO NOT COMMIT!)
+# ------------------------------------------------------------------------------
+src/main/resources/config.properties
+target/classes/config.properties
+*.env
+*.env.*
+*.key
+*.pem
+
+# Allow the safe configuration template to be tracked
+!src/main/resources/config.properties.example
+
+# ------------------------------------------------------------------------------
+# 2. Maven Build & Compiled Outputs
+# ------------------------------------------------------------------------------
+target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.zip
+*.tar.gz
+*.rar
+
+# Ensure Maven Wrapper jar is NOT ignored if present
+!.mvn/wrapper/maven-wrapper.jar
+
+# Maven release plugin files
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# ------------------------------------------------------------------------------
+# 3. IDE & Editor Files
+# ------------------------------------------------------------------------------
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse & Spring Tool Suite (STS)
+.project
+.classpath
+.settings/
+.metadata/
+bin/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.loadpath
+.recommenders
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# ------------------------------------------------------------------------------
+# 4. Logs, Dumps & Crash Reports
+# ------------------------------------------------------------------------------
+*.log
+logs/
+log/
+hs_err_pid*
+replay_pid*
+
+# ------------------------------------------------------------------------------
+# 5. Operating System Specific Files
+# ------------------------------------------------------------------------------
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Linux
+*~
+.directory
